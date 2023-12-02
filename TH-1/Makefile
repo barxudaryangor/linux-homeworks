@@ -1,10 +1,10 @@
-all: complexNum
+all: array-summary
 
-complexNum: main.o complex.o
-	g++ -o complexNum main.o complex.o
-complex.o: complex.cpp complex.h
-	g++ -c complex.cpp
-main.o: main.cpp
-	g++ -c main.cpp
+array-summary: array-summary.o
+	g++ array-summary.o -o array-summary
+
+array-summary.o: array-summary.cpp
+	g++ -c array-summary.cpp
+
 clean:
-	rm *.o complexNum
+	rm *.o array-summary
