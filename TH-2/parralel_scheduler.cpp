@@ -19,9 +19,7 @@ parallel_scheduler::~parallel_scheduler() {
 
     // Joins all threads to wait for their completion before destroying the scheduler
     for (auto &thread : threads) {
-        if (thread.joinable()) {
             thread.join();
-        }
     }
 }
 
