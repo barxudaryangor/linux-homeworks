@@ -23,4 +23,3 @@ private:
 
     void task_thread();
 };
-
