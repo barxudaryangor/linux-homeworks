@@ -1,5 +1,5 @@
 #include <iostream>
-#include "parralel_scheduler.h"
+#include "parallel_scheduler.h"
 #include <mutex>
 #include <functional>
 
