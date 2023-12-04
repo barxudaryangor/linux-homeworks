@@ -1,4 +1,4 @@
-#include "parralel_scheduler.h"
+#include "parallel_scheduler.h"
 
 // Constructor: Initializes the scheduler with the specified number of threads
 parallel_scheduler::parallel_scheduler(std::size_t numThreads) {
