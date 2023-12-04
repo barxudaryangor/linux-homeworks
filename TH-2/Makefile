@@ -1,10 +1,10 @@
-all: parralel_scheduler.so demo-application
+all: demo-application
 
-parralel_scheduler.so: parralel_scheduler.cpp
-	g++ -c parralel_scheduler.cpp
+demo-application:  demo-application.o
+        g++ demo-application.o -o demo-application
 
-demo-application: demo-application.cpp parralel_scheduler.so
-	g++ -c demo-application.cpp
+demo-application.o: demo-application.cpp parralel_scheduler.cpp parralel_scheduler.h
+        g++ -c demo-application.cpp -pthread
 
 clean:
-	rm *.o demo-application
+        rm *.o demo-application
