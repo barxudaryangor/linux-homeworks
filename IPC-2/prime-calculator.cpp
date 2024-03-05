@@ -8,7 +8,9 @@
 int mTH_prime(int num) 
 {
     int PrimeCount = 0;
-    int i, flag, prime = 1;
+    int i = 1;
+    int flag = 1; 
+    int prime = 1;
     while (num != PrimeCount)
     {
         flag = 0;
